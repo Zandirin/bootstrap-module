@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+            integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <title>Whiskey Drop | Taste a new whiskey every month</title>
 </head>
 
@@ -16,7 +18,8 @@
         <ul class="navbar-nav mr-auto">
             <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
             <li class="active nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
-            <li class="active nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign in / Sign Up</a></li>
+            <li class="active nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign in / Sign Up</a>
+            </li>
         </ul>
         <div class="d-none d-md-block">
             <p class="navbar-text my-auto mr-2"><i>Great whiskey delivered to your door!</i></p>
@@ -24,13 +27,19 @@
         </div>
     </nav>
 
-    <article class="container">
+    <article class="container mt-3">
+        <div class="row d-none d-sm-block">
+            <div class="col-12 alert alert-warning">
+                <strong>Sale Now On!</strong> We've got a sale on. Get a 12-month subscription for the price of 6! <a href="">See here for details!</a>
+            </div>
+        </div>
         <!-- Callout -->
         <div class="row">
-            <section class="callout col-12 jumbotron mt-3">
+            <section class="callout col-12 jumbotron">
                 <h1>The finest whiskeys delivered to your doorstep.</h1>
                 <p class="lead">Sign up today to start receiving the world's best whiskeys every month.
-                    <s class="d-none d-sm-inline">£19.99</s><span class="d-inline d-sm-none"><br></span><strong><mark>First one is free!</mark></strong>
+                    <s class="d-none d-sm-inline">£19.99</s><span
+                        class="d-inline d-sm-none"><br></span><strong><mark>First one is free!</mark></strong>
                 </p>
                 <button class="btn btn-success btn-lg">Sign Up</button>
                 <p class="text-muted"><small>You must be over 18 to sugn up to our service. Please, drink
@@ -50,16 +59,29 @@
             </div>
             <div class="row">
                 <div class="col-12 col-md-6">
-                    <blockquote class="quote">
-                        <p>I've been introduced to more than 10 great international whiskeys I never knew about.</p>
-                        <p>- Jane Doe</p>
-                    </blockquote>
+                    <div class="media">
+                        <img class="d-none d-sm-block rounded-circle mr-3" src="assets/images/girl-image.png" alt="Picture of girl"
+                            height="100" width="100">
+                        <div class="media-body">
+                            <blockquote class="quote">
+                                <p>I've been introduced to more than 10 great international whiskeys I never knew about.
+                                </p>
+                                <p>- Jane Doe</p>
+                            </blockquote>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-12 col-md-6">
-                    <blockquote class="quote">
-                        <p>I haven't been sober for months!</p>
-                        <p>- Jane Doe</p>
-                    </blockquote>
+                    <div class="media">
+                        <img class="d-none d-sm-block rounded-circle mr-3" src="assets/images/guy-image.png" alt="Picture of a man"
+                            height="100" width="100">
+                        <div class="media-body">
+                            <blockquote class="quote">
+                                <p>I haven't been sober for months!</p>
+                                <p>- John Doe</p>
+                            </blockquote>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -76,17 +98,17 @@
             </div>
             <div class="row">
                 <div class="feature col-12 col-md-6 col-lg-4">
-                    <h3>Feature 1</h3>
+                    <h3><i class="fas fa-gift d-none d-sm-inline"></i> Feature 1 <span class="badge badge-success">NEW!</span></h3>
                     <p>Long feature description goes here.</p>
                     <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
                 </div>
                 <div class="feature col-12 col-md-6 col-lg-4">
-                    <h3>Feature 2</h3>
+                    <h3><i class="fas fa-credit-card d-none d-sm-inline"></i> Feature 2</h3>
                     <p>Long feature description goes here.</p>
                     <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
                 </div>
                 <div class="feature col-12 d-md-none d-lg-block col-lg-4">
-                    <h3>Feature 3</h3>
+                    <h3><i class="fas fa-times-circle d-none d-sm-inline"></i> Feature 3</h3>
                     <p>Long feature description goes here.</p>
                     <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
                 </div>
